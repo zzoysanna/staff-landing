@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="wrapper">
+                <a href="index.html">На главную</a>
+                <ul>
+                    <li><a href="resume.html">Ищу работу</a></li>
+                    <li><a href="hire.html">Ищу персонал</a></li>
+                    <li><a href="share.html">Предлагаю персонал</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="title-block request">
+            <h1>Заявка на поиск работы</h1>
+        </section>
+        <article>
+            <div class="wrapper">
+                <form action="" method="get">
+
+                    <fieldset>
+                        <legend>Контактная информация</legend>
+                        <label for="name" class="required">
+                            <span>Фамилия, имя, отчество</span>
+                            <input name="name" id="name" type="text" placeholder="" required>
+                        </label>
+                        <label for="phone" class="required">
+                            <span>Телефон</span>
+                            <input name="phone" id="phone" type="tel" required>
+                        </label>
+                        <label for="email" class="required">
+                            <span>Электронная почта</span>
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                        <label for="contacts">
+                            <span>Другие способы связи</span>
+                            <textarea name="contacts" id="contacts" cols="30" rows="5"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Персональные данные</legend>
+                        <label for="field" class="required">
+                            <span>Сфера деятельности</span>
+                            <input type="text" placeholder="" id="field" name="field" required>
+                        </label>
+                        <label for="specialty" class="required">
+                            <span>Специальность</span>
+                            <input type="text" placeholder="" id="specialty" name="specialty" required>
+                        </label>
+                        <div class="inputs-set">
+                            <span>Тип работы</span>
+                            <label class="check-item" for="load_full">
+                                <input type="radio" name="load" value="fulltime" id="load_full">
+                                полный рабочий день
+                            </label>
+                            <label class="check-item" for="load_part">
+                                <input type="radio" name="load" value="parttime" id="load_part">
+                                неполный рабочий день
+                            </label>
+                        </div>
+                        <div class="inputs-set">
+                            <span>Регион</span>
+                            <label class="check-item" for="region_center">
+                                <input type="radio" name="region" id="region_center" value="center">
+                                Центральный
+                            </label>
+                            <label class="check-item" for="region_povolje">
+                                <input type="radio" name="region" id="region_povolje" value="povolje">
+                                Поволжье
+                            </label>
+                            <label class="check-item" for="region_vostok">
+                                <input type="radio" name="region" id="region_vostok" value="vostok">
+                                Дальний Восток
+                            </label>
+                        </div>
+                        <label for="city" class="required">
+                            <span>Город</span>
+                            <input type="text" name="city" id="city" required>
+                        </label>
+                        <div class="inputs-set">
+                            <span>Пол</span>
+                            <label class="check-item" for="gender_man">
+                                <input type="radio" name="gender" value="man" id="gender_man">
+                                мужской
+                            </label>
+                            <label class="check-item" for="gender_woman">
+                                <input type="radio" name="gender" value="woman" id="gender_woman">
+                                женский
+                            </label>
+                        </div>
+                        <label for="age">
+                            <span>Возраст</span>
+                            <input type="number" name="age" id="age">
+                        </label>
+                        <label for="skills">
+                            <span>Ключевые навыки</span>
+                            <textarea name="skills" id="skills" cols="30" rows="5"></textarea>
+                        </label>
+                        <label for="resume" class="required">
+                            <span>Ссылка на резюме</span>
+                            <textarea name="resume" id="resume" cols="30" rows="5" required></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input type="submit" value="Отправить заявку">
+
+                </form>
+            </div>
+        </article>
+        <footer>
+            <div class="wrapper">
+                <p>Типа копирайт в футере</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
