@@ -252,9 +252,37 @@ label.required > span:after {
     padding-left: 5px;
 }
 
+.catalog-section {
+    margin-bottom: 20px;
+}
+
+.catalog-section h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.catalog-section li {
+    display: block;
+    background: #efefef;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.catalog-section span {
+    display: block;
+    line-height: 140%;
+}
+
+.catalog-section .card-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
 
 @media screen and (max-width: 767px) {
-    header ul {
+    header ul li:not(:last-child){
         display: none;
     }
     .options {

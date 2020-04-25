@@ -16,6 +16,7 @@
                 <li><a href="resume.html">Ищу работу</a></li>
                 <li><a href="hire.html">Ищу персонал</a></li>
                 <li><a href="share.html">Предлагаю персонал</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
             </ul>
         </div>
     </header>
@@ -47,14 +48,23 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>Персональные данные</legend>
+                    <legend>Заявка</legend>
                     <label for="field" class="required">
                         <span>Сфера деятельности</span>
-                        <input type="text" placeholder="" id="field" name="field" required>
+                        <select name="field" id="field" required>
+                            <option value="realty">Недвижимость</option>
+                            <option value="insurance">Страхование</option>
+                            <option value="it">IT, интернет</option>
+                            <option value="sales">Продажи</option>
+                            <option value="education">Образование</option>
+                            <option value="marketing">Маркетинг</option>
+                            <option value="finance">Финансы</option>
+                            <option value="worker">Рабочий персонал</option>
+                        </select>
                     </label>
-                    <label for="specialty" class="required">
-                        <span>Специальность</span>
-                        <input type="text" placeholder="" id="specialty" name="specialty" required>
+                    <label for="vacancy" class="required">
+                        <span>Вакансия</span>
+                        <input type="text" placeholder="" id="vacancy" name="vacancy" required>
                     </label>
                     <div class="inputs-set">
                         <span>Тип работы</span>
@@ -67,47 +77,32 @@
                             неполный рабочий день
                         </label>
                     </div>
-                    <div class="inputs-set">
-                        <span>Регион</span>
-                        <label class="check-item" for="region_center">
-                            <input type="radio" name="region" id="region_center" value="center">
-                            Центральный
-                        </label>
-                        <label class="check-item" for="region_povolje">
-                            <input type="radio" name="region" id="region_povolje" value="povolje">
-                            Поволжье
-                        </label>
-                        <label class="check-item" for="region_vostok">
-                            <input type="radio" name="region" id="region_vostok" value="vostok">
-                            Дальний Восток
-                        </label>
-                    </div>
-                    <label for="city" class="required">
-                        <span>Город</span>
-                        <input type="text" name="city" id="city" required>
+                    <label for="number" class="required">
+                        <span>Количество сотрудников</span>
+                        <input type="number" placeholder="" id="number" name="number" required>
                     </label>
-                    <div class="inputs-set">
-                        <span>Пол</span>
-                        <label class="check-item" for="gender_man">
-                            <input type="radio" name="gender" value="man" id="gender_man">
-                            мужской
-                        </label>
-                        <label class="check-item" for="gender_woman">
-                            <input type="radio" name="gender" value="woman" id="gender_woman">
-                            женский
-                        </label>
-                    </div>
-                    <label for="age">
-                        <span>Возраст</span>
-                        <input type="number" name="age" id="age">
-                    </label>
-                    <label for="skills">
-                        <span>Ключевые навыки</span>
-                        <textarea name="skills" id="skills" cols="30" rows="5"></textarea>
-                    </label>
-                    <label for="resume" class="required">
-                        <span>Ссылка на резюме</span>
-                        <textarea name="resume" id="resume" cols="30" rows="5" required></textarea>
+                    <!--<div class="inputs-set">-->
+                        <!--<span>Регион</span>-->
+                        <!--<label class="check-item" for="region_center">-->
+                            <!--<input type="radio" name="region" id="region_center" value="center">-->
+                            <!--Центральный-->
+                        <!--</label>-->
+                        <!--<label class="check-item" for="region_povolje">-->
+                            <!--<input type="radio" name="region" id="region_povolje" value="povolje">-->
+                            <!--Поволжье-->
+                        <!--</label>-->
+                        <!--<label class="check-item" for="region_vostok">-->
+                            <!--<input type="radio" name="region" id="region_vostok" value="vostok">-->
+                            <!--Дальний Восток-->
+                        <!--</label>-->
+                    <!--</div>-->
+                    <!--<label for="city" class="required">-->
+                        <!--<span>Город</span>-->
+                        <!--<input type="text" name="city" id="city" required>-->
+                    <!--</label>-->
+                    <label for="description">
+                        <span>Описание вакансии</span>
+                        <textarea name="description" id="description" cols="30" rows="5"></textarea>
                     </label>
                 </fieldset>
 

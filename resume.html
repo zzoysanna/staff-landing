@@ -16,6 +16,7 @@
                     <li><a href="resume.html">Ищу работу</a></li>
                     <li><a href="hire.html">Ищу персонал</a></li>
                     <li><a href="share.html">Предлагаю персонал</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
                 </ul>
             </div>
         </header>
@@ -50,7 +51,16 @@
                         <legend>Персональные данные</legend>
                         <label for="field" class="required">
                             <span>Сфера деятельности</span>
-                            <input type="text" placeholder="" id="field" name="field" required>
+                            <select name="field" id="field" required>
+                                <option value="realty">Недвижимость</option>
+                                <option value="insurance">Страхование</option>
+                                <option value="it">IT, интернет</option>
+                                <option value="sales">Продажи</option>
+                                <option value="education">Образование</option>
+                                <option value="marketing">Маркетинг</option>
+                                <option value="finance">Финансы</option>
+                                <option value="worker">Рабочий персонал</option>
+                            </select>
                         </label>
                         <label for="specialty" class="required">
                             <span>Специальность</span>
@@ -67,25 +77,25 @@
                                 неполный рабочий день
                             </label>
                         </div>
-                        <div class="inputs-set">
-                            <span>Регион</span>
-                            <label class="check-item" for="region_center">
-                                <input type="radio" name="region" id="region_center" value="center">
-                                Центральный
-                            </label>
-                            <label class="check-item" for="region_povolje">
-                                <input type="radio" name="region" id="region_povolje" value="povolje">
-                                Поволжье
-                            </label>
-                            <label class="check-item" for="region_vostok">
-                                <input type="radio" name="region" id="region_vostok" value="vostok">
-                                Дальний Восток
-                            </label>
-                        </div>
-                        <label for="city" class="required">
-                            <span>Город</span>
-                            <input type="text" name="city" id="city" required>
-                        </label>
+                        <!--<div class="inputs-set">-->
+                            <!--<span>Регион</span>-->
+                            <!--<label class="check-item" for="region_center">-->
+                                <!--<input type="radio" name="region" id="region_center" value="center">-->
+                                <!--Центральный-->
+                            <!--</label>-->
+                            <!--<label class="check-item" for="region_povolje">-->
+                                <!--<input type="radio" name="region" id="region_povolje" value="povolje">-->
+                                <!--Поволжье-->
+                            <!--</label>-->
+                            <!--<label class="check-item" for="region_vostok">-->
+                                <!--<input type="radio" name="region" id="region_vostok" value="vostok">-->
+                                <!--Дальний Восток-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<label for="city" class="required">-->
+                            <!--<span>Город</span>-->
+                            <!--<input type="text" name="city" id="city" required>-->
+                        <!--</label>-->
                         <div class="inputs-set">
                             <span>Пол</span>
                             <label class="check-item" for="gender_man">
